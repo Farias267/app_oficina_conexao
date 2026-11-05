@@ -1,2 +1,4 @@
 import { defineConfig } from 'vite'
-export default defineConfig({ esbuild: { jsx: 'automatic' } })
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({ plugins: [react()] })
